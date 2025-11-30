@@ -1,0 +1,19 @@
+# Django Core and Environment Management
+django                      # Core framework
+django-environ              # Securely handle environment variables (.env files)
+
+# REST API Development and Documentation
+djangorestframework         # Building REST APIs
+django-cors-headers         # Handle Cross-Origin Resource Sharing
+drf-yasg                    # Swagger/OpenAPI documentation
+
+# Asynchronous Tasks
+celery                      # Task queue management
+# NOTE: Celery requires a message broker. RabbitMQ is mentioned,
+# which uses the 'amqp' protocol. 'kombu' is often a core dependency.
+# This package allows Python to communicate with RabbitMQ/Celery.
+kombu                       # Messaging library used by Celery
+
+# Database Connector
+# You need a specific package to connect Django/Python to MySQL.
+mysqlclient                 # Recommended MySQL database connector
